@@ -48,7 +48,7 @@ const oneTime = [
 const club = {
   desc: "Continuous design, development, and strategy for your brand. The power of a dedicated digital team without the hiring overhead.",
   benefits: [
-    "50 Monthly Tokens - Blazing fast execution at our most exclusive rate ($50/h).",
+    "50 Monthly Tokens - Blazing fast execution at our most exclusive rate (€50/h).",
     "Same-Day Priority - Your tasks jump straight to the front of our daily queue.",
     "All-In-One - Use your tokens for anything: design, code, SEO, copy, or social media.",
     "Total Flexibility - Pause or cancel your membership anytime you want, no stress.",
@@ -320,7 +320,7 @@ function TokensLine({ amount, rate }: { amount: string; rate: string }) {
   );
 }
 
-const formatPrice = (v: number) => `$${Math.round(v)}`;
+const formatPrice = (v: number) => `€${Math.round(v)}`;
 
 /** Price that rolls (counts) from its previous value to the new one via GSAP. */
 function AnimatedPrice({ value, className }: { value: number; className?: string }) {
@@ -502,10 +502,10 @@ export function PricingTabs() {
                 <h3 className="text-2xl tracking-[-0.96px]">Desnis Club</h3>
                 <p className="mt-2 max-w-[320px] text-base font-light leading-6 text-white/65">{club.desc}</p>
                 <div className="mt-6 flex items-end gap-2">
-                  <span className="text-[40px] leading-none tracking-[-1.6px]">$2500</span>
+                  <span className="text-[40px] leading-none tracking-[-1.6px]">€2500</span>
                   <span className="pb-1 text-lg font-light text-white/65">/mo</span>
                 </div>
-                <TokensLine amount="50 Tokens" rate="$50 = 1h" />
+                <TokensLine amount="50 Tokens" rate="€50 = 1h" />
 
                 <div className="mt-auto">
                   <Link
@@ -528,7 +528,7 @@ export function PricingTabs() {
                 />
                 <TokensLine
                   amount={`${hourTiers[hourPlan].tokens} Tokens`}
-                  rate={`$${hourTiers[hourPlan].rate} = 1h`}
+                  rate={`€${hourTiers[hourPlan].rate} = 1h`}
                 />
 
                 <SlidingTabs
