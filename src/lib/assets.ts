@@ -84,6 +84,7 @@ export const assets = {
     bulkstream: { img: `${base}/showcase/bulkstream.webp`, logo: `${base}/showcase/bulkstream-logo.png` },
     veneda: { img: `${base}/showcase/veneda.webp`, logo: `${base}/showcase/veneda-logo.png` },
     invertolux: { img: `${base}/showcase/invertolux-v2.webp`, logo: `${base}/showcase/invertolux-logo.svg` },
+    peakEnergy: { img: `${base}/showcase/peak-energy.webp`, logo: `${base}/showcase/peak-energy-logo.png` },
   },
 
   // /world-cup — 2026 WC Edition frame. Assets are WebP (alpha preserved),
